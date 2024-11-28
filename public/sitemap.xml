@@ -22,14 +22,5 @@
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-11-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/example/</loc>
-    <lastmod>2018-08-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/markdown/</loc>
-    <lastmod>2018-08-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/post/2018/08/30/markdown-guide-modified/</loc>
-    <lastmod>2018-08-30T00:00:00+00:00</lastmod>
   </url>
 </urlset>

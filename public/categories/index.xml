@@ -15,12 +15,5 @@
       <guid>http://localhost:1313/categories/arma-3/</guid>
       <description></description>
     </item>
-    <item>
-      <title>Example</title>
-      <link>http://localhost:1313/categories/example/</link>
-      <pubDate>Thu, 30 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/example/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>
