@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Luanmh</title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content in Posts on Luanmh</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ArmA 3 Mission Making: AI and Terrain</title>
+      <link>http://localhost:1313/post/2024/11/26/arma-3-mission-making-ai-and-terrain/</link>
+      <pubDate>Tue, 26 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2024/11/26/arma-3-mission-making-ai-and-terrain/</guid>
+      <description>&lt;p&gt;While making missions with ArmA 3&amp;rsquo;s editor, I developed some practices and general ideas for mission making. For me, they are useful for the conceptual stage of mission making. Most of my missions were made for A3 units and are supervised by a Zeus, but using it only as an admin tool.  In my experience, thinking about the mission as a sctructured path, from objective to objective, gives a sense of strategy behind the AIs and avoids the feeling that players are only having random encounters. I do know other mission makers prefer to generate missions automatically and don&amp;rsquo;t rely on editor placed units or triggers that activate units in a predictable way. I write this only out of my personal experience and my basic knowledge(Or the lack of it) of ArmA&amp;rsquo;s scripting language. I do know the awesome work that many modders and mission makers do to generate dynamic missions and an intelligent high command AI. This is not in anyway, to bash on those with skills that are way superior than mine, but only to guide those who make missions in this style or to beginners in the Eden Editor.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

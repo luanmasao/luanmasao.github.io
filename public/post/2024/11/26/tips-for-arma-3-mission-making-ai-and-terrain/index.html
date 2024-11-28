@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A simple, minimal blog for those who love text.">
+    <title>Tips for ArmA 3 Mission Making: AI and Terrain | Luanmh</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="http://localhost:1313/css/theme-override.css">
+    
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          
+          
+          <li class="pull-left ">
+            <a href="http://localhost:1313/">~/luanmh</a>
+          </li>
+          
+          
+          <li class="pull-left ">
+            <a href="/categories/">~/categories</a>
+          </li>
+          
+          
+          <li class="pull-left ">
+            <a href="/tags/">~/tags</a>
+          </li>
+          
+
+          
+          
+          <li class="pull-right">
+            <a href="https://github.com/luanmasao">~/github</a>
+          </li>
+          
+
+        </ul>
+      </nav>
+    </header>
+
+
+<div class="article-meta">
+<h1><span class="title">Tips for ArmA 3 Mission Making: AI and Terrain</span></h1>
+
+<h2 class="date">2024/11/26</h2>
+<p class="terms">
+  
+  
+  Categories: <a href="/categories/arma-3">ArmA 3</a> 
+  
+  
+  
+  Tags: <a href="/tags/arma3">arma3</a> 
+  
+  
+</p>
+</div>
+
+
+
+<div class="content-wrapper">
+  <main>
+    <p>While making missions with ArmA 3&rsquo;s editor, I developed some practices and general ideas for mission making. For me, they are useful for the conceptual stage of mission making. Most of my missions were made for A3 units and are supervised by a Zeus, but using it only as an admin tool.  In my experience, thinking about the mission as a sctructured path, from objective to objective, gives a sense of strategy behind the AIs and avoids the feeling that players are only having random encounters. I do know other mission makers prefer to generate missions automatically and don&rsquo;t rely on editor placed units or triggers that activate units in a predictable way. I write this only out of my personal experience and my basic knowledge(Or the lack of it) of ArmA&rsquo;s scripting language. I do know the awesome work that many modders and mission makers do to generate dynamic missions and an intelligent high command AI. This is not in anyway, to bash on those with skills that are way superior than mine, but only to guide those who make missions in this style or to beginners in the Eden Editor. This guide is mostly done so I don&rsquo;t forget key points that I learned through out these years.</p>
+<h1 id="location-scouting">Location Scouting</h1>
+<p>I know this may seem exaggerated at first, but A3&rsquo;s terrains are so large and diverse that indeed, we sometimes have to do some &ldquo;scouting&rdquo; to find what fits best our planning for a mission. Some points that can affect the gameplay of a mission:</p>
+<ul>
+<li>Travel distances: consider the vehicles or the lack of them. Think about how players will navigate the map and employ the vehicles for their strategic plans.</li>
+<li>Terrain characteristics that have a strategic importance: hills, lakes, roads, forests etc&hellip;</li>
+<li>Expected engagement distances between players are defined by map objects/ biome: buildings, dense forests, tree lines, rocks and even the lack of any of natural cover in arid terrains.</li>
+<li>Weather/Time: besides nigh time, things like the amount of fog or daylight can drastically affect a mission and are often overlooked. Terrain also affects how you adjust these parameters.</li>
+</ul>
+<p>It seems obvious that mission makers and players recognize these features as something important, but we often overlook these advantages over a mission. Considering that ArmA&rsquo;s gameplay core is the movement of large formations of infantry and vehicles, we often can&rsquo;t predict what most of the players will do in such a large map. Other FPS games deal with a small number of AI in small maps and few players, while in A3 you can have 80 players or 100 players playing against the same amount of AI. All of this planning over a large number of players can be overwhelming if correct planning isn&rsquo;t done before starting to make a mission, but some of A3&rsquo;s Editor tools can help you:</p>
+<ul>
+<li>
+<p>Create a prototype mission:</p>
+<ul>
+<li>Place the units that you intend to use in your map. Test their equipment and vehicles, see the limitations and advantages imposed by their weapons and how you can balance them.</li>
+<li>Use editor markers to mark strategic and key locations.</li>
+</ul>
+</li>
+<li>
+<p>While testing assets and scouting the terrain:</p>
+<ul>
+<li>Try to have and imagine the mission while it unfolds.</li>
+<li>Think of strategies for the AI like you were leading them.
+<ul>
+<li>Do wrong strategies(Unintentional or not): not every commander is perfect. Create opportunities that players can take advantage of.</li>
+<li>Think about how the factions would play your mission: are they a conventional army or a much smaller force like a guerrila?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="ai-movement-and-positions">AI Movement and Positions</h1>
+<p>AI should take advantage of the terrain and specially, respect the player&rsquo;s intelligence. AI doesn&rsquo;t see the terrain as we do. Things mentioned before like hills and forests are just in their path of engaging you. Of course some elements like trees and rocks will be used by them for cover. But there is not a commander in them that see these locations as an advantage or a limitation. More often they will just ignore their position and go straight to eliminate you. These decisions make funny situations like seeing a large formation of AI moving through the open desert in the most dumb way possible. Creating positions like bunkers and placing sandbags over natural objects like rocks can make the AI stronger and gives them a sense of intelligence. Limiting their area of movement or disabling it completely by using the disableAI modifier creates a fierce and intelligent opponent. As mentioned before, think of them as they were you playing against other players.</p>
+<p>One of the joys of this game is overcoming adversities through movement and cooperation between squads. Try to place AI considering all players, don&rsquo;t focus too much in only one place. Avoid the notion that &ldquo;sniping&rdquo; is always an option. It&rsquo;s easy to kill AI, specially when their accuracy and reaction doesn&rsquo;t work as well as ours, but often they can surprise players with movement. In my opinion, ArmA just becomes a shooting simulator instead of the combined arms gameplay that it represents.</p>
+<h2 id="cqb-limitations">CQB Limitations</h2>
+<p>Taking consideration of ArmA&rsquo;s main technical features, doing missions in urban enviroments is challenging. Player and gun movement aren&rsquo;t the most fluid in the industry, so it can generate funny situations at times. Despite that, I think its a theme often overlooked in certain missions. Conquering cities is one of the most dangerous and fiercest battles an army can face, so it can be a challenging and rewarding mission for players. Ambush alleys, houses and building complexes that serve as strongholds for the enemy, can be used to diversify the gameplay. Placing AI in a way that gives them an advantage takes away some of the boredom that players often face while engaging enemies. IEDs and AP mines can create the chaos of an urban enviroment. It&rsquo;s one of my favorite settings in making ArmA missions: it allows the mission maker to utilize a lot of editor objets to alter the terrain. Placing destroyed assets and leveling whole neighborhoods, for me, gives a sense of a real warfare happening.</p>
+
+    <a href="/"> >> Home</a>
+  </main>
+</div>
+    <footer>
+      
+      
+      <script>
+      (function() {
+        function center_el(tagName) {
+          var tags = document.getElementsByTagName(tagName), i, tag;
+          for (i = 0; i < tags.length; i++) {
+            tag = tags[i];
+            var parent = tag.parentElement;
+            
+            if (parent.childNodes.length === 1) {
+              
+              if (parent.nodeName === 'A') {
+                parent = parent.parentElement;
+                if (parent.childNodes.length != 1) continue;
+              }
+              if (parent.nodeName === 'P') parent.style.textAlign = 'center';
+            }
+          }
+        }
+        var tagNames = ['img', 'embed', 'object'];
+        for (var i = 0; i < tagNames.length; i++) {
+          center_el(tagNames[i]);
+        }
+      })();
+      </script>
+
+      
+      <hr/>
+      <a href="https://github.com/luanmasao">Github</a> | <a href="https://www.youtube.com/@lumasao5015">YouTube</a> | Site built with <a href="https://gohugo.io/">Hugo</a> | Theme: <a href="https://github.com/goodroot/hugo-classic">Classic</a>
+      
+    </footer>
+  </body>
+</html>
+
